@@ -8,7 +8,11 @@ module.exports = {
 		'./context/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				neueMontreal: ['NeueMontreal Bold', 'sans-serif'],
+			},
+		},
 	},
 	plugins: [],
 };

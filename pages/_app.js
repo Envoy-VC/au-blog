@@ -61,10 +61,7 @@ export default function App({ Component, pageProps }) {
 			<RainbowKitProvider
 				chains={chains}
 				coolMode
-				theme={{
-					lightMode: lightTheme({ overlayBlur: 'small' }),
-					darkMode: darkTheme({ overlayBlur: 'small' }),
-				}}
+				theme={lightTheme({ overlayBlur: 'small', accentColor: '#000' })}
 			>
 				<Component {...pageProps} />
 			</RainbowKitProvider>

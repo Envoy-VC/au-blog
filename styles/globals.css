@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'NeueMontreal Bold';
+	src: url('../public/NeueMontreal-Bold.otf');
+}
