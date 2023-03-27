@@ -10,7 +10,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				neueMontreal: ['NeueMontreal Bold', 'sans-serif'],
+				neueMontreal: ['NeueMontreal-Bold', 'sans-serif'],
+				neueMontrealRegular: ['NeueMontreal-Regular', 'sans-serif'],
 			},
 		},
 	},
