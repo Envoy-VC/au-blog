@@ -1,10 +1,12 @@
 import { Navbar } from '@/components';
-import { Hero } from '@/sections';
+import { Hero, About, Connect } from '@/sections';
 
 const Home = () => (
 	<div>
 		<Navbar />
 		<Hero />
+		<About />
+		<Connect />
 	</div>
 );
 
