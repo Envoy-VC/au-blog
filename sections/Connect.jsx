@@ -4,7 +4,7 @@ import discord from '../assets/discord.png';
 const Connect = () => {
 	return (
 		<section className='bg-white text-black w-full'>
-			<div className='mx-auto max-w-screen-2xl px-4 py-32 lg:flex lg:items-center'>
+			<div className='mx-auto max-w-screen-2xl px-4 pt-8 pb-32 lg:flex lg:items-center'>
 				<div className='mx-auto text-center'>
 					<span className='bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-[20px] font-neueMontrealRegular font-semibold tracking-widest'>
 						[ community ]
