@@ -13,6 +13,16 @@ module.exports = {
 				neueMontreal: ['NeueMontreal-Bold', 'sans-serif'],
 				neueMontrealRegular: ['NeueMontreal-Regular', 'sans-serif'],
 			},
+			keyframes: {
+				floating: {
+					'0%': { transform: 'translate(0)' },
+					'50%': { transform: 'translateY(200px)' },
+					'100%': { transform: 'translate(0)' },
+				},
+			},
+			animation: {
+				float: 'floating 3s ease-in-out infinite',
+			},
 		},
 	},
 	plugins: [require('@tailwindcss/line-clamp')],

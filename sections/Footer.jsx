@@ -7,7 +7,7 @@ import alchemyLogo from '../assets/alchemy-logo.png';
 
 const Footer = () => {
 	return (
-		<footer aria-label='Site Footer' class='bg-black    '>
+		<footer aria-label='Site Footer' class='bg-black'>
 			<div class='mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8'>
 				<div class='flex justify-center items-center text-gray-100 font-neueMontreal text-[36px] gap-2 mx-auto text-center'>
 					<Image

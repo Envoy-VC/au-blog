@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@rainbow-me/rainbowkit": "^0.12.4",
 		"@tailwindcss/line-clamp": "^0.4.4",
+		"@whal3s/whal3s.js": "^0.3.7",
 		"eslint": "8.36.0",
 		"eslint-config-next": "13.2.4",
 		"ethers": "^5.7.2",

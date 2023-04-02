@@ -27,15 +27,15 @@ const BrowseArticles = () => {
 
 	return (
 		<section className='bg-white text-black w-full'>
-			<div className='mx-auto max-w-screen-2xl px-4 py-32 lg:flex lg:items-center mt-12'>
-				<div className='sm:pl-24'>
+			<div className='mx-auto max-w-screen-2xl px-4 py-16 mt-12 lg:flex lg:items-center'>
+				<div className=''>
 					<span className='bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-[20px] font-neueMontrealRegular font-semibold tracking-widest'>
 						[ browse articles ]
 					</span>
 					<div class='mt-4 text-[#020202] text-4xl sm:text-[54px] font-neueMontreal font-extrabold leading-[54px]'>
 						Explore the Latest Insights
 					</div>
-					<div className='mt-16 flex flex-col sm:flex-row gap-16 justify-center items-center'>
+					<div className='mt-16 flex flex-col md:flex-row gap-16 justify-center items-center'>
 						{articles.slice(0, 3).map((article, index) => (
 							<BlogCard
 								key={index}

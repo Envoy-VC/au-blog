@@ -10,7 +10,7 @@ const BlogCard = ({ coverImage, title, brief, slug }) => {
 				src={coverImage}
 				width={500}
 				height={224}
-				class='h-56 w-full sm:object-cover object-contain'
+				class='h-56 w-full md:object-contain object-cover'
 			/>
 
 			<div class='p-4 sm:p-6'>

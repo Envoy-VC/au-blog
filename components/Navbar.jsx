@@ -38,7 +38,7 @@ const Navbar = () => {
 							</a>
 						</li>
 						<li className='mr-4 hover:text-[#5578F8]'>
-							<a href='#' rel='noreferrer' target='_blank'>
+							<a href='/contests' rel='noreferrer' target='_blank'>
 								CONTESTS
 							</a>
 						</li>
@@ -91,7 +91,7 @@ const Navbar = () => {
 							</a>
 						</li>
 						<li className='mb-4 hover:text-[#5578F8]'>
-							<a href='#' rel='noreferrer' target='_blank'>
+							<a href='/contests' rel='noreferrer' target='_blank'>
 								CONTESTS
 							</a>
 						</li>
