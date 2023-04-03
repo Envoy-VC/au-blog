@@ -4,7 +4,7 @@ import { tracks } from '@/constants';
 
 const About = () => {
 	return (
-		<section className='bg-white text-black w-full'>
+		<section className='bg-white text-black'>
 			<div className='mx-auto max-w-screen-2xl px-4 py-32'>
 				<div className='mx-auto text-center'>
 					<span className='bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-[20px] font-neueMontrealRegular font-semibold tracking-widest'>

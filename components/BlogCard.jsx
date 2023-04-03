@@ -2,15 +2,17 @@
 import React from 'react';
 import Image from 'next/image';
 
+import { publicationDomain } from '../constants';
+
 const BlogCard = ({ coverImage, title, brief, slug }) => {
 	return (
-		<article class='transition-all hover:scale-[103%] overflow-hidden rounded-lg border border-gray-100 shadow-sm'>
+		<article class='transition-all hover:scale-[103%] overflow-hidden rounded-lg border border-gray-100 shadow-sm max-w-[500px] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[475px]'>
 			<Image
 				alt='Blog Card'
 				src={coverImage}
 				width={500}
 				height={224}
-				class='h-56 w-full md:object-contain object-cover'
+				class='h-56 w-full object-cover'
 			/>
 
 			<div class='p-4 sm:p-6'>
@@ -23,7 +25,9 @@ const BlogCard = ({ coverImage, title, brief, slug }) => {
 				</p>
 
 				<a
-					href='#'
+					href={`${publicationDomain}${slug}`}
+					target='_blank'
+					rel='noreferrer'
 					class='group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600'
 				>
 					Find out more

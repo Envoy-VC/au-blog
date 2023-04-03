@@ -12,7 +12,7 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const genericHamburgerLine = `h-[3px] w-[18px] my-[2px] rounded-full bg-black transition ease transform duration-300`;
 	return (
-		<nav className='bg-white max-w-screen-2xl mx-auto'>
+		<nav className='bg-white max-w-screen-2xl mx-auto z-10'>
 			<div className='flex flex-row justify-between px-6 md:px-12 py-12'>
 				<div className='flex items-center w-fit order-2 md:order-1'>
 					<Image

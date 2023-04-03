@@ -12,18 +12,14 @@
 	src: url('../public/NeueMontreal-Regular.woff2');
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
 .box-shadow-1 {
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
 		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.gradient-01 {
-	position: absolute;
-	width: 200px;
-	height: 438px;
-	top: 0px;
-	right: 0px;
-
-	background: #7aebfb;
-	filter: blur(190px);
 }

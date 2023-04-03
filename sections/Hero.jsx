@@ -1,6 +1,6 @@
 const Hero = () => (
 	<section className='bg-white text-black'>
-		<div className='mx-auto max-w-screen-xl px-4 py-16 border-2 border-red-500'>
+		<div className='mx-auto max-w-screen-xl px-4 py-16 relative z-10'>
 			<div className='mx-auto max-w-3xl text-center'>
 				<h1 className='text-[#020202] text-6xl sm:text-[64px] font-neueMontreal font-extrabold leading-[84px]'>
 					Tech Writers Guild

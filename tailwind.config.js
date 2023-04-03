@@ -19,9 +19,18 @@ module.exports = {
 					'50%': { transform: 'translateY(200px)' },
 					'100%': { transform: 'translate(0)' },
 				},
+				discord_spin: {
+					'0%': { transform: 'rotate(0deg)', scale: '1' },
+					'50%': { transform: 'rotate(180deg)', scale: '1.2' },
+					'100%': {
+						transform: 'rotate(360deg)',
+						scale: '1',
+					},
+				},
 			},
 			animation: {
 				float: 'floating 3s ease-in-out infinite',
+				discord: 'discord_spin 1s 1',
 			},
 		},
 	},
