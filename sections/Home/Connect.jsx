@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import discord from '../assets/discord.png';
+import discord from '../../assets/discord.png';
 
 const Connect = () => {
 	return (

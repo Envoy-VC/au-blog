@@ -27,14 +27,34 @@ const UtilityComponent = () => {
 		setUtility(_utility);
 	};
 
+	const options = {
+		method: 'GET',
+		headers: {
+			accept: 'application/json',
+			authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+		},
+	};
+
+	const fetchWalletNFTs = async () => {
+		console.log(account.address);
+		const nfts = await fetch(
+			`https://app.whal3s.xyz/api/v0/nft-validation-utilities/07ea7578-1950-43a9-92c2-9696fdf2058d/wallet/${account.address}
+`,
+			options
+		);
+		const res = await nfts.json();
+		if (res.valid === true) {
+			setStep(NftValidationUtility.STEP_CLAIMED);
+		} else setStep(NftValidationUtility.STEP_NFTS_FETCHED);
+	};
+
 	useEffect(() => {
 		init();
+		fetchWalletNFTs();
 	}, []);
 
 	return (
-		<div>
-			{step === NftValidationUtility.STEP_WALLET_CONNECTED && <h1>Hii</h1>}
-		</div>
+		<div>{step === NftValidationUtility.STEP_CLAIMED && <h1>Hii</h1>}</div>
 	);
 };
 
