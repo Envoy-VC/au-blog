@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { BlogCard } from '@/components';
-import { GET_ARTICLES } from '@/utils/query';
+import { GET_ARTICLE_SLUGS } from '@/utils/query';
 
 const BrowseArticles = () => {
-	const [articles, setArticles] = useState([]);
+	const [slugs, setSlugs] = useState([]);
 
 	const fetchArticles = async () => {
 		const variables = { page: 0 };
@@ -13,12 +13,12 @@ const BrowseArticles = () => {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
-				query: GET_ARTICLES,
+				query: GET_ARTICLE_SLUGS,
 				variables,
 			}),
 		});
 		const res = await data.json();
-		setArticles(res.data.user.publication.posts);
+		setSlugs(res.data.user.publication.posts.slice(0, 3));
 	};
 
 	useEffect(() => {
@@ -32,18 +32,12 @@ const BrowseArticles = () => {
 					<span className='bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-[20px] font-neueMontrealRegular font-semibold tracking-widest'>
 						[ browse articles ]
 					</span>
-					<div class='mt-4 text-[#020202] text-4xl sm:text-[54px] font-neueMontreal font-extrabold leading-[54px]'>
+					<div className='mt-4 text-[#020202] text-4xl sm:text-[54px] font-neueMontreal font-extrabold leading-[54px]'>
 						Explore the Latest Insights
 					</div>
 					<div className='mt-16 flex flex-col md:flex-row gap-8 justify-center items-center flex-wrap'>
-						{articles.slice(0, 3).map((article, index) => (
-							<BlogCard
-								key={index}
-								coverImage={article.coverImage}
-								title={article.title}
-								brief={article.brief}
-								slug={article.slug}
-							/>
+						{slugs.map((slug, index) => (
+							<BlogCard key={index} slug={slug.slug} />
 						))}
 					</div>
 				</div>
