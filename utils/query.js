@@ -20,16 +20,11 @@ export const GET_ARTICLE = `
     }
 `;
 
-export const GET_CONTESTS = (date) => {
+export const GET_CONTEST_IDS = (date) => {
 	const query = `
      {
-        contests(where: {endDate_gte: "${date}", startDate_lte: "${date}"}) {
+        contests(where: {endDate_gte: "${date}"}) {
             id
-            title
-            category
-            description
-            startDate
-            endDate
         }
     }
     `;
