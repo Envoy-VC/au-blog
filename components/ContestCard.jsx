@@ -34,7 +34,7 @@ const ContestCard = ({ id }) => {
 
 	return (
 		<div className='rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[5px] shadow-xl'>
-			<a target='_blank' rel='noreferrer'>
+			<a href={`/contests/${id}`} target='_blank' rel='noreferrer'>
 				<div className='bg-white max-w-xl relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 shadow-sm'>
 					<div className='sm:flex sm:justify-between sm:gap-4'>
 						<div>
