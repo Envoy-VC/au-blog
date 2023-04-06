@@ -10,7 +10,7 @@ const About = () => {
 					<span className='bg-gradient-to-r from-sky-500 to-indigo-500 bg-clip-text text-transparent text-[20px] font-neueMontrealRegular font-semibold tracking-widest'>
 						[ choose your track ]
 					</span>
-					<div class='mt-4 text-[#020202] text-4xl sm:text-[54px] font-neueMontreal font-extrabold leading-[54px]'>
+					<div className='mt-4 text-[#020202] text-4xl sm:text-[54px] font-neueMontreal font-extrabold leading-[54px]'>
 						What is your writing style?
 					</div>
 					<div className='mt-16 flex flex-col sm:flex-row gap-16 justify-center items-center'>

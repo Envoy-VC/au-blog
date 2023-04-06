@@ -5,7 +5,7 @@ const FAQCard = ({ question, answer }) => {
 		<div className='space-y-4 w-full max-w-xl'>
 			<details
 				className='group [&_summary::-webkit-details-marker]:hidden'
-				closed
+				closed='true'
 			>
 				<summary className='flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50'>
 					<h2 className='font-medium text-gray-900'>{question}</h2>
@@ -18,9 +18,9 @@ const FAQCard = ({ question, answer }) => {
 						stroke='currentColor'
 					>
 						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							strokeWidth='2'
 							d='M19 9l-7 7-7-7'
 						/>
 					</svg>
