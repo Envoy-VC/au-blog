@@ -1,4 +1,4 @@
 import BrowseContests from './BrowseContests';
-import ContestPage from './ContestPage';
+import ContestDetails from './ContestDetails';
 
-export { BrowseContests, ContestPage };
+export { BrowseContests, ContestDetails };

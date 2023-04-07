@@ -42,7 +42,7 @@ export const GET_CONTEST = (id) => {
             startDate
             endDate
             content {
-                html
+                raw
             }
         }
     }

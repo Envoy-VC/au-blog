@@ -17,13 +17,13 @@ const ContestCard = ({ id }) => {
 		);
 
 		const fetchContest = async () => {
-			const today = new Date();
 			const query = GET_CONTEST(id);
 			const gqlQuery = gql`
 				${query}
 			`;
 			const contest = await hygraph.request(gqlQuery);
 			setContest(contest.contests[0]);
+			console.log(contest.contests[0]);
 		};
 		fetchContest();
 	}, []);
