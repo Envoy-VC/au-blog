@@ -1,38 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alchemy University Techwriters Guild Blog
 
-## Getting Started
+This is a blog website created for Alchemy University Techwriters Guild. The website hosts various contests like Implementation Deep Dive, Research Deep Dive, and Twitter Threads for the guild members. The website is token gated using Whal3s, which means only users with the Alchemy University Early Access Pass can take part in the competitions.
 
-First, run the development server:
+The Submissions Page is token gated using Whal3s. Users need to have an Alchemy University Early Access Pass to access the page. The page provides a form to submit the entry, along with the necessary details like name, Discord Handle, and links.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Link to the website: https://au-blog-envoy-vc.vercel.app/
+Link to token: https://opensea.io/assets/matic/0x60576a64851c5b42e8c57e3e4a5cf3cf4eeb2ed6/2698
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Website Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The website has the following features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Token Gated: The website is token gated using Whal3s. Users need to have an Alchemy University Early Access Pass to access the content on the website and participate in the contests.
+- Browse Contests Page: This page lists all the ongoing contests, along with their description, dates, and prizes.
+- Submission Page: Users can submit their entries for the ongoing contests through the submission page. The page provides a form to submit the entry, along with the necessary details like name, Discord Handle, and links.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is built using the following technologies:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js, a React framework, for the front-end.
+- tailwindcss, a CSS framework, for styling.
+- hygraph for headless CMS.
+- Whal3s, a token gating service, to restrict access to the website.
