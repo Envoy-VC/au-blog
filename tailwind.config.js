@@ -20,8 +20,14 @@ module.exports = {
 					'100%': { transform: 'translate(0)' },
 				},
 				discord_spin: {
-					'0%': { transform: 'rotate(0deg)', scale: '1' },
-					'50%': { transform: 'rotate(180deg)', scale: '1.2' },
+					'0%': {
+						transform: 'rotate(0deg) skewY(0px)',
+						scale: '1',
+					},
+					'50%': {
+						transform: 'rotate(180deg) skewY(24px)',
+						scale: '1.2',
+					},
 					'100%': {
 						transform: 'rotate(360deg)',
 						scale: '1',
@@ -30,7 +36,7 @@ module.exports = {
 			},
 			animation: {
 				float: 'floating 3s ease-in-out infinite',
-				discord: 'discord_spin 1s 1',
+				discord: 'discord_spin 0.85s 1 ease-in-out',
 			},
 		},
 	},

@@ -22,10 +22,7 @@ import { publicProvider } from 'wagmi/providers/public';
 import '@/styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
 
-const { chains, provider } = configureChains(
-	[mainnet, polygon],
-	[publicProvider()]
-);
+const { chains, provider } = configureChains([polygon], [publicProvider()]);
 
 const connectors = connectorsForWallets([
 	{

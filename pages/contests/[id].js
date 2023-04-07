@@ -8,7 +8,7 @@ import { Navbar, Footer } from '@/components';
 import { ContestPage } from '@/sections/Contests';
 import { GET_CONTEST } from '@/utils/query';
 
-const ContestPage = () => {
+const Contests = () => {
 	const router = useRouter();
 	const { id } = router.query;
 
@@ -38,4 +38,4 @@ const ContestPage = () => {
 	);
 };
 
-export default ContestPage;
+export default Contests;

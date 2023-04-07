@@ -15,7 +15,7 @@ const Hero = () => (
 					<button className='max-w-xs bg-black px-12 py-3 text-xl font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto rounded-2xl transition-all delay-100'>
 						Get started
 					</button>
-					<button className='max-w-xs bg-white px-12 py-3 text-xl font-medium text-black hover:bg-blue-600 hover:text-white focus:outline-none focus:ring active:bg-blue-500 sm:w-auto rounded-2xl transition-all delay-100 box-shadow-1'>
+					<button className='max-w-xs bg-white px-12 py-3 text-xl font-medium text-black hover:bg-blue-600 hover:text-white focus:outline-none focus:ring active:bg-blue-500 sm:w-auto rounded-2xl transition-all delay-100 box-shadow-1 border-2 border-black hover:border-blue-600'>
 						Learn More
 					</button>
 				</div>

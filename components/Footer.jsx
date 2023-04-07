@@ -13,7 +13,7 @@ const Footer = () => {
 					<Image
 						src={alchemyLogo}
 						alt='Alchemy Logo'
-						className='sm:flex hidden w-8 h-8 mx-1'
+						className='sm:flex hidden w-12 h-10 mx-1'
 					/>
 					Alchemy University
 				</div>

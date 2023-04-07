@@ -30,21 +30,21 @@ const Navbar = () => {
 						className='block md:hidden'
 					/>
 				</div>
-				<div className='hidden md:flex items-center order-1 md:order-2'>
+				<div className='hidden md:flex items-center order-1 md:order-2 justify-center'>
 					<ul className='flex font-neueMontreal font-black text-[18px]'>
-						<li className='mr-4 hover:text-[#5578F8]'>
+						<li className='mr-[20px] hover:text-[#5578F8]'>
 							<a href='#' rel='noreferrer' target='_blank'>
 								BLOG
 							</a>
 						</li>
-						<li className='mr-4 hover:text-[#5578F8]'>
+						<li className='mx-4 hover:text-[#5578F8]'>
 							<a href='/contests' rel='noreferrer' target='_blank'>
 								CONTESTS
 							</a>
 						</li>
 					</ul>
 					<div className='ml-4'>
-						<ConnectButton />
+						<ConnectButton showBalance={false} />
 					</div>
 				</div>
 
@@ -97,7 +97,16 @@ const Navbar = () => {
 						</li>
 					</ul>
 					<div className='mb-4'>
-						<ConnectButton />
+						<ConnectButton
+							accountStatus={{
+								smallScreen: 'avatar',
+								largeScreen: 'full',
+							}}
+							showBalance={{
+								smallScreen: false,
+								largeScreen: true,
+							}}
+						/>
 					</div>
 				</motion.div>
 			)}

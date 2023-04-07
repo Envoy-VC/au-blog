@@ -49,3 +49,26 @@ export const GET_CONTEST = (id) => {
     `;
 	return query;
 };
+
+export const SUBMIT_ARTICLE = (name, link, discordHandle, contestId) => {
+	const query = `
+    mutation SubmitArticle {
+        createSubmit(
+            data: {name: "${name}", link: "${link}", discordHandle: "${discordHandle}", contests: {connect: {Contest: {id: "${contestId}"}}}}) {
+                id
+            }         
+}
+`;
+	return query;
+};
+
+export const PUBLISH_ARTICLE = (id) => {
+	const query = `
+    mutation PublishArticle {
+        publishSubmit(where: {id: "${id}"}) {
+            id
+        }
+    }
+`;
+	return query;
+};
