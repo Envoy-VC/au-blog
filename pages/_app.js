@@ -16,13 +16,13 @@ import {
 	injectedWallet,
 } from '@rainbow-me/rainbowkit/wallets';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
-import { mainnet, polygon } from 'wagmi/chains';
+import { mainnet, polygon, polygonMumbai } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 import '@/styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
 
-const { chains, provider } = configureChains([polygon], [publicProvider()]);
+const { chains, provider } = configureChains([polygonMumbai], [publicProvider()]);
 
 const connectors = connectorsForWallets([
 	{
