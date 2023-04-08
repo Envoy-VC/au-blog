@@ -4,8 +4,9 @@ This is a blog website created for Alchemy University Techwriters Guild. The web
 
 The Submissions Page is token gated using Whal3s. Users need to have an Alchemy University Early Access Pass to access the page. The page provides a form to submit the entry, along with the necessary details like name, Discord Handle, and links.
 
+Link to mnt the Early Access NFT - https://rainbow-kit-tutorial.vercel.app/
 Link to the website: https://au-blog-envoy-vc.vercel.app/
-Link to token: https://opensea.io/assets/matic/0x60576a64851c5b42e8c57e3e4a5cf3cf4eeb2ed6/2698
+Link to token: https://testnets.opensea.io/assets/mumbai/0xa6a591df8f454abd887dd34c28be6f8518b46d08/0
 
 ## Website Features
 
